@@ -1,6 +1,7 @@
 import React from "react";
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
+import './viewcalendar.css'
 export default function ViewCalendar() {
   const mark = ["2023-05-02", "2023-05-07", "2023-05-21"];
   const moment = require("moment");
@@ -12,7 +13,7 @@ export default function ViewCalendar() {
             return (
               <>
                 <div className="flex justify-center items-center absoluteDiv">
-                  <div className="dot">a</div>
+                  <div className="dot"></div>
                 </div>
               </>
             );
