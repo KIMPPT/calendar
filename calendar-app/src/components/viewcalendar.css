@@ -5,4 +5,41 @@
     border-radius: 50%;
     display: flex;
     margin-left: 1px;
+    position: absolute;
+    
   }
+  .box {
+    height: 8px;
+    width: 8px;
+    background-color: #f87171;
+    display: flex;
+    
+    margin-left: 11px;
+    position: absolute;
+    
+  }
+  .box1 {
+    height: 8px;
+    width: 8px;
+    background-color: #f87171;
+    display: flex;
+    
+    margin-left: 22px;
+    position: absolute;
+    
+  }
+  .box2 {
+    height: 8px;
+    width: 8px;
+    background-color: #f87171;
+    display: flex;
+    
+    margin-left: 33px;
+    position: absolute;
+    
+  }
+.justify-center{
+  display:flex;
+  justify-items: center;
+  
+}
