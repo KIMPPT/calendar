@@ -8,6 +8,7 @@ import ReactModal from "react-modal";
 import Empty from "./Empty";
 export default function ViewCalendar() {
   const mark = ["2023-05-02", "2023-05-07", "2023-05-21"];
+  const mark2 = ["2023-05-03", "2023-05-14", "2023-05-20"];
   const moment = require("moment");
   const [show, setShow] = useState(false);
   const [switching, setSwitching] = useState(true);
@@ -37,9 +38,16 @@ export default function ViewCalendar() {
                   <>
                     <div className="flex justify-center items-center absoluteDiv">
                       <div className="dot"></div>
+                    </div>
+                  </>
+                );
+              } else if (
+                mark2.find((x) => x === moment(date).format("YYYY-MM-DD"))
+              ) {
+                return (
+                  <>
+                    <div className="flex justify-center items-center absoluteDiv">
                       <div className="box"></div>
-                      <div className="box1"></div>
-                      <div className="box2"></div>
                     </div>
                   </>
                 );
